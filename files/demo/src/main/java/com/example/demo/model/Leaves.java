@@ -21,7 +21,6 @@ public class Leaves {
 
     private LeaveType type;
 
-
     private LeaveStatus status;
 
     private LocalDate date;
