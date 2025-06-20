@@ -1,8 +1,5 @@
 package com.example.demo.model;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue; // For @GeneratedValue
-import jakarta.persistence.GenerationType; // For GenerationType
-import jakarta.persistence.Id; // For @Id
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor; // For @AllArgsConstructor (Optional, but recommended)
 import lombok.Data; // For @Data (Optional, but recommended)
 import lombok.NoArgsConstructor; // For @NoArgsConstructor (Optional, but recommended)
@@ -20,10 +17,14 @@ import lombok.NoArgsConstructor; // For @NoArgsConstructor (Optional, but recomm
         private int id;
 
         // Common fields for an Employee
+        @Column
         private String name;
+        @Column
         private String designation;
+        @Column
 
         private String email;
+        @Column
         private String mobile;
 
 }
